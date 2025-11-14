@@ -1,0 +1,869 @@
+{
+  "quy tac ca chet": [
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Tỷ lệ chết đối với size cá bình thường trong khung của sheet \"Thong tin trang dau NK-P301-F01\" mục III.4 - Kích cỡ giống thả chọn size: 1.7, 2, 2.5",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Nếu sheet \"Thong tin trang dau NK-P301-F01\" mục III.4 - Kích cỡ giống thả chọn \"Khác\" thì tỷ lệ chết theo TLBQ của cá thả.",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Giai đoạn",
+      "Unnamed: 2": "% cá chết",
+      "Unnamed: 3": "Khi cá chết vượt tỷ lệ quy định thì là cá bệnh và cho cá bệnh ở giai đoạn cá < 100g. \nTrước khi sử dụng thuốc trị bệnh nên cho cá chết vượt quy định 2 ngày và sau ngày cuối cùng sử dụng thuốc 3 - 5 ngày.\nTrước khi sử dụng thuốc trị ký sinh trùng nên cho cá chết vượt quy định 1 ngày và sau ngày cuối cùng sử dụng thuốc 1 - 2 ngày."
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Cá thả từ ngày 1 đến ngày 7 tổng tỉ lệ hao hụt không quá",
+      "Unnamed: 2": "< 0.5%",
+      "Unnamed: 3": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Cá thả từ ngày 8 đến ngày 14 tỉ lệ hao hụt/ ngày",
+      "Unnamed: 2": "< 0.4%",
+      "Unnamed: 3": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Cỡ cá tới 40g tỉ lệ hao hụt/ ngày",
+      "Unnamed: 2": "< 0.3%",
+      "Unnamed: 3": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Cỡ cá từ 40g đến 80g/ ngày",
+      "Unnamed: 2": "< 0.1%",
+      "Unnamed: 3": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Cỡ cá từ 80g đến 100g / ngày",
+      "Unnamed: 2": "< 0.03%",
+      "Unnamed: 3": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Cỡ cá trên 100g / ngày",
+      "Unnamed: 2": "< 0.02%",
+      "Unnamed: 3": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Tỉ lệ vô hình trong suốt quá trình nuôi (Số con thả - (số con thu hoạch + số con cá chết))/Số con thả)*100",
+      "Unnamed: 2": "≤ 10%",
+      "Unnamed: 3": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Tổng tỷ lệ chết trong quá trình nuôi ",
+      "Unnamed: 2": "≤ 15%",
+      "Unnamed: 3": NaN
+    }
+  ],
+  "quy tac cap thoat nuoc": [
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Lấy thông tin lượng nước thay các mức ở file nguồn \"thong ke thong tin farms\"",
+      "Unnamed: 2": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Tính từ lúc thả đến tháng thứ nhất thì thay 2 lần/tháng (theo nhịp thay nước)",
+      "Unnamed: 2": "Lấy lượng nước mức 1"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Tháng thứ 2 thay 3 lần/tháng (theo nhịp thay nước)",
+      "Unnamed: 2": "Lấy lượng nước mức 1"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Tháng thứ 3 thay 4 lần/tháng (theo nhịp thay nước)",
+      "Unnamed: 2": "Lấy lượng nước mức 2"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Tháng thứ 4 trở đi thay 5-10 lần/tháng (theo nhịp thay nước)",
+      "Unnamed: 2": "Lấy lượng nước mức 2 hoặc 3 hoặc bỏ nhịp tùy thuộc vào tổng lượng nước cấp có vượt quy định không"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Thu hoạch",
+      "Unnamed: 2": "Lấy lượng mức 4 vào ngày thu hoạch cuối"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Cấp lại 1m nước cho vụ mới",
+      "Unnamed: 2": "Ngay nhịp thay nước của vùng trước ngày sử dụng thuốc đầu tiên"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Ao lắng",
+      "Unnamed: 2": "vùng nuôi có 2 ao lắng sẽ cho xả thải khác ngày nhau và đảm bảo trong tháng có 2 đợt thải cùng ngày. Đảm bảo tổng lượng xả không vượt 10.000m3/ngày đối với vùng không có giấy phép xả thải"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Cấp thoát nước ao nuôi",
+      "Unnamed: 2": "Đảm bảo lượng cấp không được vượt 8.640 m3/ngày."
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Ao nuôi",
+      "Unnamed: 2": "Khi sử dụng thuốc điều trị bệnh không được thay nước."
+    }
+  ],
+  "bac si ngu y": [
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Bác sĩ ngư y từ tháng 4.25",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": "Họ tên",
+      "Unnamed: 3": "Vùng nuôi",
+      "Unnamed: 4": "Ngày thẩm tra"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": "Dư Hữu Trọng",
+      "Unnamed: 3": "Bình Thạnh, Bình Thạnh 1, Bình Thạnh 2",
+      "Unnamed: 4": "Ngày cuối cùng của mỗi tháng -2 ngày"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "Tân Khánh Trung, Mỹ Xương",
+      "Unnamed: 4": "Ngày cuối cùng của mỗi tháng -1 ngày"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "Tân Thuận Tây, Tân Thuận Đông, Tịnh Thới",
+      "Unnamed: 4": "Ngày cuối cùng của mỗi tháng"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": "Hồ Thanh Vinh",
+      "Unnamed: 3": "Tân Hưng Khu 2 ( ao 1 -ao 97)",
+      "Unnamed: 4": "Ngày cuối cùng của mỗi tháng -1 ngày"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "Mỹ Hiệp 1, Mỹ Hiệp 2",
+      "Unnamed: 4": "Ngày cuối cùng của mỗi tháng"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "Chợ Mới",
+      "Unnamed: 4": "Ngày cuối cùng của mỗi tháng"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": "Hồ Minh Luân",
+      "Unnamed: 3": "Tân Hưng K1 (ao 1G - ao 39G)",
+      "Unnamed: 4": "Ngày cuối cùng của mỗi tháng -2 ngày"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "Tân Hòa",
+      "Unnamed: 4": "Ngày cuối cùng của mỗi tháng"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "Tân Hồng",
+      "Unnamed: 4": "Ngày cuối cùng của mỗi tháng"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "Tân Hồng 1",
+      "Unnamed: 4": "Ngày cuối cùng của mỗi tháng -1 ngày"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": "Vĩnh Hòa",
+      "Unnamed: 4": "Ngày cuối cùng của mỗi tháng -1 ngày"
+    }
+  ],
+  "P301-F06": [
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": "Ngày hiệu lực/ Effective: 01.01.25",
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": "Lần soát xét/ Version: 03",
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": "Hôm nay/ Today, ngày/ date         tháng/ month          năm/ year 20    , Tại vùng nuôi/at farm:…................….. Chúng tôi gồm/ we are hereby:…............................",
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": "1/",
+      "Unnamed: 1": "……………………………….",
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "……………………………………",
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": "2/",
+      "Unnamed: 1": "……………………………….",
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "……………………………………",
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": "Tiến hành vận chuyển và giao nhận thức ăn với các thông tin/số liệu sau:\nCarry out the transport and delivery of feed with the following information/ data:",
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": "Tên ghe/tàu/The name of the boat:……………………Mã số/Code:…………………………….  ",
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": "STT/No.",
+      "Unnamed: 1": "Nhà sản xuất thức ăn\nProduction company",
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": "Kích cỡ\nSize",
+      "Unnamed: 3": "Quy cách Packing",
+      "Unnamed: 4": "ĐVT\nUnit",
+      "Unnamed: 5": "Số lượng Quantity",
+      "Mã số/ Code:P301-F06": "Ghi chú khác\nNote",
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": "(1)",
+      "Unnamed: 1": "(2)",
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": "(3)",
+      "Unnamed: 3": "(4)",
+      "Unnamed: 4": "(5)",
+      "Unnamed: 5": "(6)",
+      "Mã số/ Code:P301-F06": "(7)",
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": "Tổng/ Total:",
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": "Tình trạng vệ sinh của phương tiện vận chuyển/ Status of hygiene:",
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": "STT/ No.",
+      "Unnamed: 1": "Chỉ tiêu kiểm tra Parameters testing",
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": "Có\nYes",
+      "Unnamed: 3": "Không\nNo",
+      "Unnamed: 4": "Hành động khắc phục Corrective action",
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": "Đạt\nOk",
+      "Unnamed: 7": "K.Đạt\nNot ok"
+    },
+    {
+      "Unnamed: 0": 1,
+      "Unnamed: 1": "Dầu nhớt vương vãi\nGasoline, diesel",
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": 2,
+      "Unnamed: 1": "Rác thải, rong rêu, bùn đất \nGarbage, mould, mud",
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": 3,
+      "Unnamed: 1": "Khô ráo\nDry",
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": "Địa điểm ghe/tàu đã đến 48 giờ trước/The location of the boat/train arrived 48 hours ago: \n………………………………………………………………………………………………………..",
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": "Tình trạng bao bì lúc giao nhận:\nPacking condition at merchandise exchange:",
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Nguyên vẹn/ Integrity",
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": "   Có/Yes          ",
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": "Không/No",
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Khô ráo/ Dry",
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": "   Có/Yes          ",
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": "Không/No",
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Nấm mốc/ Mould",
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": "   Có/Yes          ",
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": "Không/No",
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Sạch sẽ/ Clean",
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": "   Có/Yes          ",
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": "Không/No",
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "ð Kết luận/ Conclusion",
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": "   Đạt/ Ok          ",
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": "            Không đạt/Not ok",
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": "Chúng tôi cam đoan tính xác thực của biên bản và chịu hoàn toàn trách nhiệm về tính xác thực của nó.\nWe guarantee the authenticity of the minutes and take full responsibility for their authenticity.",
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Người giao/Deliver",
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": "Người nhận/ Receiver",
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": "(Ký/ Sign, ghi rõ họ tên/ write full name)",
+      "Unnamed: 1": NaN,
+      "BIÊN BẢN GIAO NHẬN THỨC ĂN \nMinutes of feed delivery record": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": "(Ký/ Sign, ghi rõ họ tên/ write full name)",
+      "Unnamed: 5": NaN,
+      "Mã số/ Code:P301-F06": NaN,
+      "Unnamed: 7": NaN
+    }
+  ],
+  "P301-F07": [
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": "SỔ THEO DÕI THỨC ĂN\nThe tracking book of the feed",
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": "Mã số/ Code: P301-F07",
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": "Ngày hiệu lực/ Effective date: 01.01.25",
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": "Lần soát xét/ Version: 03",
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": "Vùng nuôi/ Farm:",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": "NGÀY\nDate",
+      "Unnamed: 1": "LƯỢNG NHẬP\nInput quantity",
+      "Unnamed: 2": "MSL\nNHẬP\n Input batch code",
+      "Đạm/Protein  - ly/size:": "HẠN SỬ DỤNG\nNHẬP\nInput Expiry date ",
+      "Unnamed: 4": "MÃ SỐ LÔ\nCHO ĂN \nFeed batch code",
+      "Tên thức ăn/ Feed name:": "HẠN SỬ DỤNG\nCHO ĂN\nFeed expiry date ",
+      "Unnamed: 6": "XUẤT\nOUTPUT",
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": "TỒN CUỐI Invetory",
+      "Đơn vị tính/Unit: Kg": "TÌNH TRẠNG THỨC ĂN\nFeed condition",
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": "GHI CHÚ\nNote\n"
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": "Lượng\nQuantity",
+      "Unnamed: 7": "Ao\nPond",
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": "Đạt\n Ok",
+      "Unnamed: 10": "Không đạt \nNot ok",
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": "Chú thích/ Note:",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": "Tình trạng thức ăn đạt khi/ Feed meet requirements when: thức ăn khô ráo, không nấm mốc/ Feed of dry and no mould",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": NaN,
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": "Ngày/Date:",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": "Ngày/Date:",
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    },
+    {
+      "Kho/Storage:                       ": "Người giám sát/ Supervisor:",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Đạm/Protein  - ly/size:": NaN,
+      "Unnamed: 4": NaN,
+      "Tên thức ăn/ Feed name:": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN,
+      "Unnamed: 8": "Người theo dõi/Followers:",
+      "Đơn vị tính/Unit: Kg": NaN,
+      "Unnamed: 10": NaN,
+      "Unnamed: 11": NaN
+    }
+  ]
+}

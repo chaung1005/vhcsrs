@@ -1,0 +1,951 @@
+{
+  "quy tac moi truong ao nuôi": [
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Chỉ tiêu",
+      "Unnamed: 2": "Tần suất đo",
+      "Unnamed: 3": "Yêu cầu",
+      "Unnamed: 4": "Tuần đầu ",
+      "Unnamed: 5": "Tuần thứ 2 - tháng đầu tiên",
+      "Unnamed: 6": "2 tháng tiếp theo",
+      "Unnamed: 7": " Các tháng còn lại"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "DO \n(mg/L)",
+      "Unnamed: 2": "2 lần/ngày",
+      "Unnamed: 3": "Buổi sáng thấp hơn buổi chiều chênh lệch trong ngày min = 0.2, max = 1, bước nhảy là 0.1",
+      "Unnamed: 4": "Sáng: 3.5 - 3.9\nChiều: 3.9 - 4.5",
+      "Unnamed: 5": "Sáng: 3.0 - 3.5\nChiều: 3.5 - 3.9",
+      "Unnamed: 6": "Sáng: 2.9 - 3.2\nChiều: 3.2 - 3.5",
+      "Unnamed: 7": "Sáng: 2.6 - 2.9\nChiều: 2.8 - 3.4"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN,
+      "Unnamed: 5": NaN,
+      "Unnamed: 6": NaN,
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Chỉ tiêu",
+      "Unnamed: 2": "Tần suất đo",
+      "Unnamed: 3": "Yêu cầu",
+      "Unnamed: 4": "Tháng 2 - 5",
+      "Unnamed: 5": "Tháng 6 - 10",
+      "Unnamed: 6": "Tháng 11 - 1",
+      "Unnamed: 7": "tháng đề cập cho nhiệt độ là tháng của năm chứ không phải tháng nuôi"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Nhiệt độ nước  Temperature (oC)",
+      "Unnamed: 2": "2 lần/ngày",
+      "Unnamed: 3": "Buổi sáng thấp hơn buổi chiều chênh lệch trong ngày min = 0.5, max = 2, bước nhảy 0.1",
+      "Unnamed: 4": "sáng: từ 28 đến <30\nchiều: từ 29 đến < 32",
+      "Unnamed: 5": "sáng: từ 27 đến <30\nchiều: từ 29 đến < 31",
+      "Unnamed: 6": "sáng: từ 26 đến <29\nchiều: từ 28 đến < 30",
+      "Unnamed: 7": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "pH",
+      "Unnamed: 2": "2 lần/ngày",
+      "Unnamed: 3": "Buổi sáng thấp hơn buổi chiều chênh lệch trong ngày không quá 0.5, bước nhảy 0.1",
+      "Unnamed: 4": "7 - 8",
+      "Unnamed: 5": "7 - 8",
+      "Unnamed: 6": "7 - 8",
+      "Unnamed: 7": NaN
+    }
+  ],
+  "Danh muc hoa chat": [
+    {
+      "DANH MỤC HÓA CHẤT": "STT",
+      "Unnamed: 1": "TÊN ",
+      "Unnamed: 2": "LƯỢNG SỬ DỤNG",
+      "Unnamed: 3": "CÔNG DỤNG",
+      "Unnamed: 4": "CTY SẢN XUẤT",
+      "Unnamed: 5": "QUY CÁCH"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 1,
+      "Unnamed: 1": "VITALUCAN - B12 NEW",
+      "Unnamed: 2": "3kg/1 tấn thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty Cổ Phần UV",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 2,
+      "Unnamed: 1": "VIMELEC CONCENTRATED",
+      "Unnamed: 2": "1kg/1 tấn thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty TNHH MTV Thuốc thú y & Chế phẩm sinh học Vemedim",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 3,
+      "Unnamed: 1": "VITAMIN C ANTISTRESS",
+      "Unnamed: 2": "1 kg/500kg thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty TNHH MTV Thuốc thú y & Chế phẩm sinh học Vemedim",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 4,
+      "Unnamed: 1": "UV - FeB12 max",
+      "Unnamed: 2": "1 lít / 500 kg thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty Cổ Phần UV",
+      "Unnamed: 5": "1 lít/chai"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 5,
+      "Unnamed: 1": "UV-ZYMLUS MAX",
+      "Unnamed: 2": "1 lít / 700 kg thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty Cổ Phần UV",
+      "Unnamed: 5": "1 lít/chai"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 6,
+      "Unnamed: 1": "PZOZYME",
+      "Unnamed: 2": "1 kg/500kg thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty Cổ Phần UV",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 7,
+      "Unnamed: 1": "HEPAMIN super",
+      "Unnamed: 2": "1 lít /300 kg thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty Cổ Phần UV ",
+      "Unnamed: 5": "1 lít/chai"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 8,
+      "Unnamed: 1": "BIO IMMUNE-100",
+      "Unnamed: 2": "1 lít/1 tấn thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KHANG ANH",
+      "Unnamed: 5": "1 lít/chai"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 9,
+      "Unnamed: 1": "PHYLUS",
+      "Unnamed: 2": "2kg/1tấn thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty TNHH MTV Thuốc thú y & Chế phẩm sinh học Vemedim",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 10,
+      "Unnamed: 1": "UV-BIOMAX",
+      "Unnamed: 2": "1kg /500kg thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty Cổ Phần UV ",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 11,
+      "Unnamed: 1": "VITALEC FISH +",
+      "Unnamed: 2": "1kg/1 tấn thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Provimi",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 12,
+      "Unnamed: 1": "LIVERED",
+      "Unnamed: 2": "1 bộ /300kg thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty TNHH MTV Thuốc thú y & Chế phẩm sinh học Vemedim",
+      "Unnamed: 5": "bộ"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 13,
+      "Unnamed: 1": "UV-BIOLAC",
+      "Unnamed: 2": "Cá < 100g : 1lít/300 kg thức ăn\nCá > 100g: 1 lít/700kg thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty Cổ Phần UV ",
+      "Unnamed: 5": "3 lít/chai"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 14,
+      "Unnamed: 1": "CHOLINE-H",
+      "Unnamed: 2": "1kg/1 tấn thức ăn ",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "AMORVET - ẤN ĐỘ",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 15,
+      "Unnamed: 1": "UV-VITALET new",
+      "Unnamed: 2": "1 kg /500kg thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty Cổ Phần UV",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 16,
+      "Unnamed: 1": "BIO-C COMPLEX",
+      "Unnamed: 2": "1kg /1 tấn thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "AMORVET - ẤN ĐỘ",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 17,
+      "Unnamed: 1": "P - COMPLEX  - TẢO - 100",
+      "Unnamed: 2": "1 kg /1 tấn thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": " CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KHANG ANH",
+      "Unnamed: 5": "500 gr/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 18,
+      "Unnamed: 1": "VIT 2",
+      "Unnamed: 2": "2kg/1tấn thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty TNHH Tiệp Phát",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 19,
+      "Unnamed: 1": "VC-FISH",
+      "Unnamed: 2": "1kg /1 tấn thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KHANG ANH",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 20,
+      "Unnamed: 1": "UV-C MIN",
+      "Unnamed: 2": "1kg /1 tấn thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty Cổ Phần UV ",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 21,
+      "Unnamed: 1": "AQUA C ®  FISH PLUS",
+      "Unnamed: 2": "1kg /500 kg thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "MSD ANIMAL HEALTH VIỆT NAM",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 22,
+      "Unnamed: 1": "Lactozyme",
+      "Unnamed: 2": "2kg/1tấn thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty TNHH MTV Thuốc thú y & Chế phẩm sinh học Vemedim",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 23,
+      "Unnamed: 1": "FOLIC new",
+      "Unnamed: 2": "1kg /500 kg thức ăn",
+      "Unnamed: 3": "Bổ sung dinh dưỡng",
+      "Unnamed: 4": "Công ty Cổ Phần UV ",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 24,
+      "Unnamed: 1": "PRO-POND new",
+      "Unnamed: 2": "Trước thả cá 0,5l /5.000m3\nDùng 0,5l /2.000m3",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": "Công ty Cổ Phần UV",
+      "Unnamed: 5": "5 lít/can"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 25,
+      "Unnamed: 1": "COMPLEX NEW",
+      "Unnamed: 2": "1lít/7.000m3",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": "Công ty Cổ Phần UV",
+      "Unnamed: 5": "1 lít/chai"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 26,
+      "Unnamed: 1": "D - FLOW",
+      "Unnamed: 2": " 2 lit/1000m3\n",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": "PINPANAT INTERNATIONAL Co., Ltd - THAILAND",
+      "Unnamed: 5": "20 lít/can"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 27,
+      "Unnamed: 1": "RODO-UV",
+      "Unnamed: 2": "1 lít /1.500 m3",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": "Công ty Cổ Phần UV",
+      "Unnamed: 5": "10 lít/can"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 28,
+      "Unnamed: 1": "Z-17",
+      "Unnamed: 2": "1 kg/10.000 m3",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": " CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KHANG ANH",
+      "Unnamed: 5": "500 gr/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 29,
+      "Unnamed: 1": "TRICON",
+      "Unnamed: 2": "1kg /10.000m2",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": "ICON Formulation (Ấn Độ)",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 30,
+      "Unnamed: 1": "EM-F1",
+      "Unnamed: 2": "Trước khi thả: 1 lít/2500m3, sử dụng 2 ngày liên tục.\n-  1 lít/2000 m3 nước, sử dụng 2 ngày liên tục",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": "Công ty Cổ Phần UV",
+      "Unnamed: 5": "5 lít/can"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 32,
+      "Unnamed: 1": "VÔI",
+      "Unnamed: 2": "Trước khi thả\n500kg/10.000 m2.\nSử dụng trong thời gian nuôi:\n20 kg/10.000 m3.",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": "Công ty Cổ phần Chăn nuôi C.P Việt Nam - Chi nhánh NM 5 tại Đồng Nai.",
+      "Unnamed: 5": "25 kg/bao"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 33,
+      "Unnamed: 1": "GLU-RV new",
+      "Unnamed: 2": "1 lít/6.000m3",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": "Công ty Cổ Phần UV ",
+      "Unnamed: 5": "1 lít/chai"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 34,
+      "Unnamed: 1": "Pond-Rhodo",
+      "Unnamed: 2": "1 lít/1.500 m3 nước, sử dụng 2 ngày liên tục.",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": "Công ty TNHH MTV Thuốc thú y & Chế phẩm sinh học Vemedim",
+      "Unnamed: 5": "20 lít/can"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 35,
+      "Unnamed: 1": "RHODO POWER",
+      "Unnamed: 2": "\n- Tháng thứ nhất: Sử dụng 1 lít / 10.000 m2\n- Tháng thứ hai: Sử dụng 3lít / 10.000 m2\n- Tháng thứ ba: Sử dụng 5/ 10.000 m2\n- Tháng thứ tư: Sử dụng 7/ 10.000 m2",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": " Công Ty TNHH Công Nghệ Sinh Học ứng Dụng Abtech",
+      "Unnamed: 5": "30 lít/can"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 36,
+      "Unnamed: 1": "BIO-ZEOTC",
+      "Unnamed: 2": "\n1kg /1000m2\n",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": " Công Ty TNHH Công Nghệ Sinh Học ứng Dụng Abtech",
+      "Unnamed: 5": "10 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 37,
+      "Unnamed: 1": "WIN-POND",
+      "Unnamed: 2": " 3kg/8000m3, sử dụng 1 lần liên tục 2 ngày.",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": "Công ty Cổ Phần UV",
+      "Unnamed: 5": "25 kg/bao"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 38,
+      "Unnamed: 1": "HIVIDINE 90",
+      "Unnamed: 2": "1 lít /1.500 m3 nước",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": "Công Ty TNHH Tiệp Phát",
+      "Unnamed: 5": "1 lít/chai"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 39,
+      "Unnamed: 1": "YUCCA NEO",
+      "Unnamed: 2": "1 lít/ 13000m2",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": "AMORVET - ẤN ĐỘ",
+      "Unnamed: 5": "1 lít/chai"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 40,
+      "Unnamed: 1": "ASI-ANTI SHOCK",
+      "Unnamed: 2": "1kg/ 5.000 m3",
+      "Unnamed: 3": "Xử lý nước",
+      "Unnamed: 4": "Chi Nhánh Công ty Cổ phần TM, SX Thuốc Thú y THỊNH Á (ASIFAC)",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 41,
+      "Unnamed: 1": "FIBA",
+      "Unnamed: 2": "1lit/1.000m3 nước",
+      "Unnamed: 3": "Trị ký sinh ",
+      "Unnamed: 4": "Công ty TNHH Thủy Sinh",
+      "Unnamed: 5": "5 lít/can"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 42,
+      "Unnamed: 1": "LICINIL -100",
+      "Unnamed: 2": "1 kg /1 tấn thức ăn",
+      "Unnamed: 3": "Trị ký sinh ",
+      "Unnamed: 4": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KHANG ANH",
+      "Unnamed: 5": "500 gr/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 43,
+      "Unnamed: 1": "FENBOVET-P",
+      "Unnamed: 2": "1 kg /1 tấn thức ăn",
+      "Unnamed: 3": "Trị ký sinh ",
+      "Unnamed: 4": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KHANG ANH",
+      "Unnamed: 5": "1 kg/gói"
+    },
+    {
+      "DANH MỤC HÓA CHẤT": 44,
+      "Unnamed: 1": "VIME -\nFENFISH",
+      "Unnamed: 2": "\n1lit/1,5 - 2 tấn thức ăn",
+      "Unnamed: 3": "Trị bệnh",
+      "Unnamed: 4": "Công ty TNHH MTV Thuốc thú y & Chế phẩm sinh học Vemedim",
+      "Unnamed: 5": "1 lít/chai"
+    }
+  ],
+  "MTP": [
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": "STT",
+      "Unnamed: 1": "Tên thành phẩm",
+      "Unnamed: 2": "Code TP"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 1,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 2 li 22 đạm",
+      "Unnamed: 2": "0104"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 2,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 3 li 22 đạm",
+      "Unnamed: 2": "0105"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 3,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 4 li 22 đạm",
+      "Unnamed: 2": "0106"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 4,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 6 li 22 đạm",
+      "Unnamed: 2": "0107"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 5,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 8 li 22 đạm",
+      "Unnamed: 2": "0108"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 6,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 2 li 22 đạm",
+      "Unnamed: 2": "0114"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 7,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 3 li 22 đạm",
+      "Unnamed: 2": "0115"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 8,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 4 li 22 đạm",
+      "Unnamed: 2": "0116"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 9,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 6 li 22 đạm",
+      "Unnamed: 2": "0117"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 10,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 8 li 22 đạm",
+      "Unnamed: 2": "0118"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 11,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 2 li 26 đạm",
+      "Unnamed: 2": "0124"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 12,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 3 li 26 đạm",
+      "Unnamed: 2": "0125"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 13,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 4 li 26 đạm",
+      "Unnamed: 2": "0126"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 14,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 6 li 26 đạm",
+      "Unnamed: 2": "0127"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 15,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 8li26 đạm",
+      "Unnamed: 2": "0128"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 16,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 2 li 22 đạm",
+      "Unnamed: 2": "0157"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 17,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 3 li 22 đạm",
+      "Unnamed: 2": "0158"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 18,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 4 li 22 đạm",
+      "Unnamed: 2": "0159"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 19,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 6 li 22 đạm",
+      "Unnamed: 2": "0160"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 20,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 8 li 22 đạm",
+      "Unnamed: 2": "0161"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 21,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 2 li 22 đạm",
+      "Unnamed: 2": "0214"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 22,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 3 li 22 đạm",
+      "Unnamed: 2": "0215"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 23,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 4 li 22 đạm",
+      "Unnamed: 2": "0216"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 24,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 6 li 22 đạm",
+      "Unnamed: 2": "0217"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 25,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 8 li 22 đạm",
+      "Unnamed: 2": "0218"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 26,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 2 li 26 đạm",
+      "Unnamed: 2": "0224"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 27,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 3 li 26 đạm",
+      "Unnamed: 2": "0225"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 28,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 4 li 26 đạm",
+      "Unnamed: 2": "0226"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 29,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 6 li 26 đạm",
+      "Unnamed: 2": "0227"
+    },
+    {
+      "DANH MỤC MÃ SỐ THÀNH PHẨM": 30,
+      "Unnamed: 1": "Thành phẩm thức ăn cá tra Feed One 8 li 26 đạm",
+      "Unnamed: 2": "0228"
+    }
+  ],
+  "DS ghe van chuyen thuc an": [
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "Unnamed: 0": "DANH SÁCH GHE VẬN CHUYỂN THỨC ĂN",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN
+    },
+    {
+      "Unnamed: 0": "STT",
+      "Unnamed: 1": "NGƯỜI VẬN CHUYỂN",
+      "Unnamed: 2": "SỐ GHE",
+      "Unnamed: 3": "TẢI TRỌNG HÀNG"
+    },
+    {
+      "Unnamed: 0": 1,
+      "Unnamed: 1": "Lê Thanh Long",
+      "Unnamed: 2": "ĐT-26106",
+      "Unnamed: 3": 178
+    },
+    {
+      "Unnamed: 0": 2,
+      "Unnamed: 1": "Lê Thanh Thới",
+      "Unnamed: 2": "ĐT-25312",
+      "Unnamed: 3": 95
+    },
+    {
+      "Unnamed: 0": 3,
+      "Unnamed: 1": "Lê Văn Tâm",
+      "Unnamed: 2": "AG-10933",
+      "Unnamed: 3": 110
+    },
+    {
+      "Unnamed: 0": 4,
+      "Unnamed: 1": "Võ Thanh Bình",
+      "Unnamed: 2": "ĐT-23433",
+      "Unnamed: 3": 95
+    },
+    {
+      "Unnamed: 0": 5,
+      "Unnamed: 1": "Nguyễn Phi Long",
+      "Unnamed: 2": "ĐT-25411",
+      "Unnamed: 3": 142
+    },
+    {
+      "Unnamed: 0": 6,
+      "Unnamed: 1": "Nguyễn Tất Lập",
+      "Unnamed: 2": "AG-24686",
+      "Unnamed: 3": 144
+    },
+    {
+      "Unnamed: 0": 7,
+      "Unnamed: 1": "Nguyễn Văn Nghĩa",
+      "Unnamed: 2": "CT-10927",
+      "Unnamed: 3": 195
+    },
+    {
+      "Unnamed: 0": 8,
+      "Unnamed: 1": "Nguyễn Thành Luân",
+      "Unnamed: 2": "ĐT-25474",
+      "Unnamed: 3": 90
+    },
+    {
+      "Unnamed: 0": 9,
+      "Unnamed: 1": "Nguyễn Thị Kiều Hoa",
+      "Unnamed: 2": "ĐT-25568",
+      "Unnamed: 3": 97
+    },
+    {
+      "Unnamed: 0": 10,
+      "Unnamed: 1": "Nguyễn Văn Hồng",
+      "Unnamed: 2": "ĐT-23965",
+      "Unnamed: 3": 119
+    },
+    {
+      "Unnamed: 0": 11,
+      "Unnamed: 1": "Trần Văn Bé Sáu",
+      "Unnamed: 2": "AG-21833",
+      "Unnamed: 3": 90
+    },
+    {
+      "Unnamed: 0": 12,
+      "Unnamed: 1": "Nguyễn Thu Hà",
+      "Unnamed: 2": "ĐT-25467",
+      "Unnamed: 3": 188
+    },
+    {
+      "Unnamed: 0": 13,
+      "Unnamed: 1": "Trương Hoàng Nhựt",
+      "Unnamed: 2": "ĐT-22759",
+      "Unnamed: 3": 120
+    },
+    {
+      "Unnamed: 0": 14,
+      "Unnamed: 1": "Phan Thanh Hào",
+      "Unnamed: 2": "AG-22967",
+      "Unnamed: 3": 64
+    },
+    {
+      "Unnamed: 0": 15,
+      "Unnamed: 1": "Trần Văn Vĩnh",
+      "Unnamed: 2": "ĐT-25986",
+      "Unnamed: 3": 109
+    },
+    {
+      "Unnamed: 0": 16,
+      "Unnamed: 1": "Võ Duy Trường",
+      "Unnamed: 2": "ĐT-25142",
+      "Unnamed: 3": 120
+    },
+    {
+      "Unnamed: 0": 17,
+      "Unnamed: 1": "Huỳnh Bích Thủy",
+      "Unnamed: 2": "ĐT-22677",
+      "Unnamed: 3": 120
+    },
+    {
+      "Unnamed: 0": 18,
+      "Unnamed: 1": "Nguyễn Thị Kim Phượng",
+      "Unnamed: 2": "ĐT-23835",
+      "Unnamed: 3": 98
+    },
+    {
+      "Unnamed: 0": 19,
+      "Unnamed: 1": "Cao Bảo Trọng",
+      "Unnamed: 2": "AG-21503",
+      "Unnamed: 3": 40
+    },
+    {
+      "Unnamed: 0": 20,
+      "Unnamed: 1": "Nguyễn Thành Bờ (Nguyễn Thị Nhung)",
+      "Unnamed: 2": "ĐT-22214",
+      "Unnamed: 3": 120
+    },
+    {
+      "Unnamed: 0": 21,
+      "Unnamed: 1": "Trần Tuấn Tú",
+      "Unnamed: 2": "AG-25290",
+      "Unnamed: 3": 60
+    },
+    {
+      "Unnamed: 0": 22,
+      "Unnamed: 1": "Lê Chánh Tây",
+      "Unnamed: 2": "CT-11073",
+      "Unnamed: 3": 178
+    },
+    {
+      "Unnamed: 0": 23,
+      "Unnamed: 1": "Nguyễn Văn Thẳng",
+      "Unnamed: 2": "ĐT-01594",
+      "Unnamed: 3": 120
+    },
+    {
+      "Unnamed: 0": 24,
+      "Unnamed: 1": "Nguyễn Thành Lộc",
+      "Unnamed: 2": "ĐT-26337",
+      "Unnamed: 3": 100
+    }
+  ],
+  "quy tac sd TA, HC": [
+    {
+      "Unnamed: 0": "Thức ăn",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": "Kích cỡ cá",
+      "Unnamed: 1": "Kích cỡ thức ăn (tối đa)",
+      "Unnamed: 2": "Khẩu phần",
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": "15- 80g",
+      "Unnamed: 1": "2 - 3 mm",
+      "Unnamed: 2": "tối đa 4% trọng lượng thân",
+      "Unnamed: 3": "Lượng thức ăn tối đa theo giai đoạn = (4*(TLBQ* số lượng cá đang có trong ao))/100",
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": "80 - 200g",
+      "Unnamed: 1": "3 – 4 mm",
+      "Unnamed: 2": "tối đa 3% trọng lượng thân",
+      "Unnamed: 3": "Lượng thức ăn tối đa theo giai đoạn = (3*(TLBQ* số lượng cá đang có trong ao))/100",
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": "200 -1000g",
+      "Unnamed: 1": "4 – 6 mm",
+      "Unnamed: 2": "tối đa 2% trọng lượng thân",
+      "Unnamed: 3": "Lượng thức ăn tối đa theo giai đoạn = (2*(TLBQ* số lượng cá đang có trong ao))/100",
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": "Lượng cho ăn phải chẵn 1 bao (từ 2mm - 26 đạm đến 6mm - 22 đạm) mỗi bao 40kg",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": "Sẽ có trường hợp 1 ngày ăn 2 loại mã lô cùng một loại ly => cần tách ra 2 dòng cho mã số lô, hạn sử dụng và lượng",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": "Trường hợp thức ăn hết kích cỡ đang sử dụng có thể lấy loại kích cỡ tiếp theo còn trong kho để cho ăn",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": "Khi sử dụng thuốc điều trị bệnh thức ăn phải giảm 50% so với ngày trước đó sau khi hết bệnh tăng dần ",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": "Sau khi thu tỉa phải giảm lượng thức ăn tương đương với lượng cá còn lại trong ao",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": "Khi tăng giảm thức ăn không được chênh lệch quá 50% của ngày hôm trước",
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": "Hóa chất",
+      "Unnamed: 1": "Cung cấp danh mục tổng mỗi vùng sẽ được chọn hóa chất sử dụng cho ao và có thể add thêm nếu có hóa chất mới",
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": NaN,
+      "Unnamed: 2": NaN,
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": "Nhóm hóa chất",
+      "Unnamed: 1": "Mục đích sử dụng",
+      "Unnamed: 2": "Thời gian sử dụng",
+      "Unnamed: 3": "Tên Sản phẩm",
+      "Unnamed: 4": "Lý do sử dụng"
+    },
+    {
+      "Unnamed: 0": "Nhóm xử lý nước",
+      "Unnamed: 1": "Cải tạo trước khi thả giống",
+      "Unnamed: 2": "Ngày 1 ",
+      "Unnamed: 3": "Vôi",
+      "Unnamed: 4": "Ổn định hệ đệm"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Cải tạo trước khi thả giống",
+      "Unnamed: 2": "Ngày 2",
+      "Unnamed: 3": "Chất xử lý nước (cho chọn theo danh mục)",
+      "Unnamed: 4": "Cho chọn: xử lý nước, bổ sung vi sinh, diệt tảo"
+    },
+    {
+      "Unnamed: 0": "Mỗi lần sử dụng 2 ngày đối vi sinh còn lại là 1 ngày",
+      "Unnamed: 1": "Trong quá trình nuôi",
+      "Unnamed: 2": "Ngày sử dụng đầu tiên sau thả cá",
+      "Unnamed: 3": "Chất xử lý nước (cho chọn theo danh mục)",
+      "Unnamed: 4": "Xử lý nước"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Trong quá trình nuôi",
+      "Unnamed: 2": "Định kì sau cấp nước 1 ngày",
+      "Unnamed: 3": "Chất xử lý nước (cho chọn theo danh mục)",
+      "Unnamed: 4": "Định kì xử lý nước"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Trong quá trình nuôi",
+      "Unnamed: 2": "Sau khi sử dụng thuốc trị bệnh",
+      "Unnamed: 3": "Chất xử lý nước (cho chọn theo danh mục)",
+      "Unnamed: 4": "Sát trùng nước"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Trong quá trình nuôi",
+      "Unnamed: 2": "Nếu nhịp thay nước ngay thời điểm cắt mồi/thu hoạch thì không sử dụng",
+      "Unnamed: 3": NaN,
+      "Unnamed: 4": NaN
+    },
+    {
+      "Unnamed: 0": "Nhóm dinh dưỡng: Mỗi lần sử dụng 3-5 ngày",
+      "Unnamed: 1": "Trong quá trình nuôi",
+      "Unnamed: 2": "Sử dụng lần đầu ",
+      "Unnamed: 3": "Bổ sung dinh dưỡng (cho chọn theo danh mục)",
+      "Unnamed: 4": "Cho chọn: tăng sức đề kháng, bổ sung vitamin"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Trong quá trình nuôi",
+      "Unnamed: 2": "Định kì 1 tháng 2/lần",
+      "Unnamed: 3": "Bổ sung dinh dưỡng (cho chọn theo danh mục)",
+      "Unnamed: 4": "Định kì bổ sung dinh dưỡng"
+    },
+    {
+      "Unnamed: 0": NaN,
+      "Unnamed: 1": "Trong quá trình nuôi",
+      "Unnamed: 2": "Sau khi sử dụng thuốc trị bệnh",
+      "Unnamed: 3": "Bổ sung dinh dưỡng (cho chọn theo danh mục)",
+      "Unnamed: 4": "Cho chọn: tăng sức đề kháng, bổ sung vitamin"
+    },
+    {
+      "Unnamed: 0": "Nhóm trị bệnh",
+      "Unnamed: 1": "Trong quá trình nuôi",
+      "Unnamed: 2": " 5 - 7 ngày bắt đầu sử dụng sau khi cá chết vượt ngưỡng 2 ngày. Không thay nước trong quá trình sử dụng",
+      "Unnamed: 3": "Trị bệnh (cho chọn theo danh mục)",
+      "Unnamed: 4": "Trị xuất huyết"
+    },
+    {
+      "Unnamed: 0": "Nhóm trị ký sinh trùng",
+      "Unnamed: 1": "Trong quá trình nuôi",
+      "Unnamed: 2": " sử dụng 1 - 2 ngày sau khi cá chết vượt ngưỡng 1 ngày.",
+      "Unnamed: 3": "Ký sinh trùng (cho chọn theo danh mục)",
+      "Unnamed: 4": "Trị ký sinh trùng"
+    }
+  ]
+}

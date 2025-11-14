@@ -1594,10 +1594,88 @@ NH3 = (Sinh_khối / 100) × 0.001 - (Thay_nước × 0.1)
 
 ## 9. QUY TRÌNH NGHIỆP VỤ
 
-### 9.1 Daily Pipeline (10 Steps)
+### 9.1 Daily Pipeline (Adaptive - 10 Steps với xử lý 2 ngày đầu)
+
+**📌 LOGIC ĐIỀU KIỆN THEO NGÀY**:
 
 ```
-START
+IF DayNumber <= 2 THEN
+  ├─> POND PREPARATION MODE (Xử lý ao, chưa thả cá)
+  │   ├─ FishCount = 0 (Không có cá)
+  │   ├─ Biomass = 0
+  │   ├─ Mortality = 0
+  │   ├─ Growth = 0
+  │   ├─ Feed = 0
+  │   └─ Focus: Hóa chất & Chất lượng nước
+ELSE
+  └─> NORMAL OPERATION MODE (Nuôi cá, 90 ngày)
+      └─ Tất cả 10 bước chạy bình thường
+```
+
+#### **NGÀY 1-2: Pond Preparation Pipeline**
+
+```
+START (Day 1-2)
+  │
+  ├─> [STEP 1] WEATHER ANCHOR
+  │   └─> Fetch temperature baseline data
+  │
+  ├─> [STEP 2] ENVIRONMENT GENERATOR (Pond Prep Mode)
+  │   ├─> Initialize DO = 6.0 mg/L (target)
+  │   ├─> Initialize pH = 7.2 (neutral)
+  │   ├─> Initialize H2S = 0 mg/L
+  │   └─> Initialize NH3 = 0 mg/L
+  │
+  ├─> [STEP 3] CHEMICAL ENGINE (PRIORITY - Pond Preparation)
+  │   ├─> Day 1: Apply lime (CaO) to adjust pH
+  │   │   ├─ Quantity: 100-200 kg/1000m³
+  │   │   ├─ Purpose: Neutralize acid, disinfect
+  │   │   └─ Cost: Chemical cost
+  │   │
+  │   ├─> Day 1-2: Apply probiotics & beneficial bacteria
+  │   │   ├─ Quantity: 5-10 kg/1000m³
+  │   │   ├─ Purpose: Establish beneficial microbes
+  │   │   └─ Cost: Chemical cost
+  │   │
+  │   └─> Day 2: Apply aeration & water treatment
+  │       ├─ Quantity: 2-5 kg/1000m³
+  │       ├─ Purpose: Increase DO, remove toxins
+  │       └─ Cost: Chemical cost
+  │
+  ├─> [STEP 4] WATER EXCHANGE (Pond Prep Mode)
+  │   ├─> Day 1: Fill pond to 80% capacity
+  │   ├─> Day 2: Complete filling + water circulation
+  │   ├─> Calculate intake volume (m³)
+  │   └─> Monitor water parameters
+  │
+  ├─> [STEP 5] INVENTORY SYNTHESIZER (Pond Prep)
+  │   ├─> Issue chemicals by FEFO algorithm
+  │   ├─> Check stock levels
+  │   └─> Create PO if shortage
+  │
+  ├─> [STEP 6] DAILY LOG SAVE (Pond Prep)
+  │   ├─> FishCount = 0
+  │   ├─> Biomass = 0
+  │   ├─> DeadCount = 0
+  │   ├─> FeedKg = 0
+  │   ├─> Water quality data (DO, pH, H2S, NH3)
+  │   ├─> Chemical usage
+  │   ├─> Water intake volume
+  │   └─> Notes: "Pond preparation - Day X"
+  │
+  └─> [STEP 7] ALERT GENERATION (Pond Prep)
+      ├─> Check water quality thresholds
+      ├─> Alert if DO < 5.0 mg/L
+      ├─> Alert if pH < 6.5 or > 8.5
+      └─> Generate alerts if needed
+
+END (Day 1-2)
+```
+
+#### **NGÀY 3-90: Normal Operation Pipeline (10 Steps)**
+
+```
+START (Day 3+)
   │
   ├─> [STEP 1] WEATHER ANCHOR
   │   └─> Fetch temperature baseline data
@@ -1655,8 +1733,128 @@ START
       ├─> Store in AlertLogs
       └─> Send notifications if needed
 
-END
+END (Day 3-90)
 ```
+
+**Pseudocode Implementation**:
+```csharp
+public async Task RunDailyPipelineAsync(int cycleId, int dayNumber)
+{
+    var cycle = await _context.FarmingCycles.FindAsync(cycleId);
+    
+    // STEP 1: Weather Anchor (All days)
+    var temperature = await _weatherProvider.GetTemperatureAsync(cycle.StartDate.AddDays(dayNumber - 1));
+    
+    if (dayNumber <= 2)
+    {
+        // POND PREPARATION MODE (Day 1-2)
+        await RunPondPreparationPipeline(cycle, dayNumber, temperature);
+    }
+    else
+    {
+        // NORMAL OPERATION MODE (Day 3-90)
+        await RunNormalOperationPipeline(cycle, dayNumber, temperature);
+    }
+}
+
+private async Task RunPondPreparationPipeline(FarmingCycle cycle, int dayNumber, decimal temp)
+{
+    // Initialize water quality
+    var envLog = new EnvironmentLog
+    {
+        CycleID = cycle.CycleID,
+        LogDate = cycle.StartDate.AddDays(dayNumber - 1),
+        DayNo = dayNumber,
+        TempAM = (float)temp,
+        TempPM = (float)temp,
+        TempMean = (float)temp,
+        DOavg = 6.0f,  // Target DO for pond prep
+        pH_AM = 7.2f,
+        pH_PM = 7.2f,
+        H2S = 0,
+        NH3 = 0
+    };
+    
+    // Apply chemicals for pond preparation
+    var chemicalUsage = new ChemicalLedger
+    {
+        WarehouseID = cycle.Pond.WarehouseID,
+        TxnDate = envLog.LogDate,
+        Direction = 'O',  // Outbound
+        CycleID = cycleId,
+        Qty = dayNumber == 1 ? 150m : 10m  // Lime on Day 1, probiotics on Day 2
+    };
+    
+    // Create daily log with FishCount = 0
+    var dailyLog = new DailyLog
+    {
+        CycleID = cycle.CycleID,
+        LogDate = envLog.LogDate,
+        DayNumber = dayNumber,
+        TempAM = envLog.TempAM,
+        TempPM = envLog.TempPM,
+        TempMean = envLog.TempMean,
+        DOavg = envLog.DOavg,
+        pH_AM = envLog.pH_AM,
+        pH_PM = envLog.pH_PM,
+        FishCount = 0,  // No fish yet
+        AvgWeightGr = 0,
+        BiomassKg = 0,
+        DeadCount = 0,
+        SurvivalRate = 0,
+        FeedKg = 0,
+        ChemicalUsed = dayNumber == 1 ? "Lime (CaO)" : "Probiotics",
+        ChemicalCost = dayNumber == 1 ? 500000m : 300000m,  // VND
+        Notes = $"Pond preparation - Day {dayNumber}"
+    };
+    
+    await _context.DailyLogs.AddAsync(dailyLog);
+    await _context.SaveChangesAsync();
+}
+
+private async Task RunNormalOperationPipeline(FarmingCycle cycle, int dayNumber, decimal temp)
+{
+    // Run all 10 steps normally (existing logic)
+    // ... (unchanged from original)
+}
+```
+
+### 9.1.1 Chi tiết: 2 Ngày Đầu Tiên (Day 1-2 Pond Preparation)
+
+**📌 Mục đích**: Chuẩn bị ao trước khi thả cá
+
+**Đặc điểm chính**:
+- **FishCount = 0** (Chưa thả cá)
+- **Biomass = 0** (Không có sinh khối)
+- **Mortality = 0** (Không tính tỷ lệ chết)
+- **Growth = 0** (Không tính tăng trưởng)
+- **Feed = 0** (Không cấp thức ăn)
+- **Focus**: Hóa chất & Chất lượng nước
+
+**Quy trình xử lý ao (Day 1-2)**:
+
+| Ngày | Hoạt động | Hóa chất | Lượng | Mục đích |
+|------|-----------|---------|-------|---------|
+| **Day 1** | Xử lý ao | Lime (CaO) | 100-200 kg/1000m³ | Điều chỉnh pH, khử trùng |
+| **Day 1-2** | Cấp nước | - | 80% → 100% dung tích | Chuẩn bị môi trường |
+| **Day 2** | Tăng DO | Probiotics + Aeration | 5-10 kg/1000m³ | Tăng oxy, vi khuẩn có lợi |
+
+**Dữ liệu được ghi trong DailyLogs (Day 1-2)**:
+- TempAM, TempPM, TempMean (từ weather)
+- DOavg = 6.0 mg/L (target)
+- pH_AM = 7.2, pH_PM = 7.2
+- H2S = 0, NH3 = 0
+- FishCount = 0, BiomassKg = 0, DeadCount = 0
+- FeedKg = 0
+- ChemicalUsed: "Lime (CaO)" hoặc "Probiotics"
+- Notes: "Pond preparation - Day X"
+
+**Cảnh báo (Alert) cho Day 1-2**:
+- ⚠️ Nếu DO < 5.0 mg/L → CRITICAL
+- ⚠️ Nếu pH < 6.5 hoặc > 8.5 → WARNING
+- ✅ Nếu tất cả tham số tốt → INFO
+
+---
 
 ### 9.2 Khởi tạo Chu kỳ Nuôi
 
@@ -1678,6 +1876,11 @@ END
 - Tạo FarmingCycle record
 - Status = 'PLANNING'
 - Lưu Seed & Manifest
+
+**⚠️ LƯU Ý**: Khi khởi tạo chu kỳ:
+- InitialFishCount sẽ được áp dụng từ **Day 3** trở đi
+- **Day 1-2**: FishCount = 0 (xử lý ao)
+- **Day 3**: Thả cá vào, FishCount = InitialFishCount
 
 ### 9.3 Replay Mode (Tái Sinh Dữ Liệu)
 

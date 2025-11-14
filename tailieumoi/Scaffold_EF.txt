@@ -1,0 +1,18 @@
+# Reverse engineer (Scaffold) EF Core (Database-First)
+
+# PowerShell (từ thư mục Code/WinForms)
+dotnet tool install --global dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.*
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.*
+
+# Kết nối ví dụ (chỉnh lại):
+$cn = "Server=YOUR_SERVER;Database=QLCLN;Trusted_Connection=True;TrustServerCertificate=True"
+
+# Sinh DbContext + entities vào thư mục Models (ghi đè nếu cần)
+dotnet ef dbcontext scaffold `
+  "$cn" Microsoft.EntityFrameworkCore.SqlServer `
+  --context "QlclnContext" `
+  --output-dir "Models" `
+  --context-dir "Models" `
+  --use-database-names `
+  --force

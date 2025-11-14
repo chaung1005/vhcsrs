@@ -1,0 +1,19 @@
+%% ERD (Mermaid) – khuyến nghị dùng Live Preview để xem
+erDiagram
+  FarmRegion ||--o{ Pond : has
+  Pond ||--o{ StockingEvent : has
+  Manufacturer ||--o{ FeedType : makes
+  Manufacturer ||--o{ ChemicalProduct : makes
+  FarmRegion ||--o{ Warehouse : has
+  Warehouse ||--o{ FeedInventoryTransaction : records
+  Warehouse ||--o{ ChemicalInventoryTransaction : records
+  Pond ||--o{ DailyLog : logs
+  FarmRegion ||--o{ FeedDelivery : has
+  FeedDelivery ||--o{ FeedDeliveryLine : contains
+  FarmRegion ||--o{ ChemicalDelivery : has
+  ChemicalDelivery ||--o{ ChemicalDeliveryLine : contains
+  ProductUsage ||--o{ ProductUsageLine : contains
+  FishHealthCheck ||--o{ FishHealthCheckLine : contains
+  FarmRegion ||--o{ WaterIntakeDrain : records
+  FarmRegion ||--o{ WastewaterResult : records
+  FarmRegion ||--o{ WasteDelivery : records
