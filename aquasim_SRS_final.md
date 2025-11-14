@@ -1,6 +1,6 @@
-# TÀI LIỆU ĐẶC TẢ YÊU CẦU PHẦN MỀM (SRS FINAL)
-## Hệ thống AquaSim v4.0 - Consolidated Complete
-### Phiên bản: 4.0 Final Consolidated
+# TÀI LIỆU ĐẶC TẢ YÊU CẦU PHẦN MỀM (SRS ENHANCED)
+## Hệ thống AquaSim v4.1 - Enhanced with Operational Data
+### Phiên bản: 4.1 Enhanced
 ### Ngày: 14/11/2025
 
 ---
@@ -9,15 +9,16 @@
 
 | Property | Value |
 |----------|-------|
-| **Document ID** | SRS-AQUASIM-4.0-FINAL |
-| **Version** | 4.0 Final Consolidated |
-| **Status** | APPROVED |
+| **Document ID** | SRS-AQUASIM-4.1-ENHANCED |
+| **Version** | 4.1 Enhanced with Operational Data |
+| **Status** | UPDATED |
 | **Date** | 14/11/2025 |
 | **Author** | Technical Team |
 | **Reviewer** | Project Manager |
 | **Approver** | Client Representative |
-| **Total Words** | ~30,000 words |
-| **Total Pages** | ~80 pages |
+| **Total Words** | ~32,000 words |
+| **Total Pages** | ~85 pages |
+| **Data Source** | QLCLN_all_sheets.json |
 
 ---
 
@@ -290,6 +291,45 @@
 - **Giám sát**: DO, pH, H2S, NH3
 - **Lịch thay**: Theo chu kỳ
 - **Form**: Tham chiếu P304-F04
+
+**Quy tắc cấp thoát nước chi tiết:**
+
+1. **Tháng 1 (từ lúc thả đến tháng thứ nhất)**:
+   - Tần suất: 2 lần/tháng (theo nhịp thay nước)
+   - Lượng nước: Mức 1 (lấy từ thông tin trang trại)
+
+2. **Tháng 2**:
+   - Tần suất: 3 lần/tháng (theo nhịp thay nước)
+   - Lượng nước: Mức 1
+
+3. **Tháng 3**:
+   - Tần suất: 4 lần/tháng (theo nhịp thay nước)
+   - Lượng nước: Mức 2
+
+4. **Tháng 4 trở đi**:
+   - Tần suất: 5-10 lần/tháng (theo nhịp thay nước)
+   - Lượng nước: Mức 2 hoặc 3 hoặc bỏ nhịp
+   - Điều kiện: Tùy thuộc vào tổng lượng nước cấp có vượt quy định không
+
+5. **Thu hoạch**:
+   - Lượng nước: Mức 4 vào ngày thu hoạch cuối
+
+6. **Cấp lại cho vụ mới**:
+   - Cấp lại 1m nước
+   - Thời điểm: Ngay nhịp thay nước của vùng trước ngày sử dụng thuốc đầu tiên
+
+**Ràng buộc quan trọng:**
+
+- **Ao lắng**:
+  - Vùng nuôi có 2 ao lắng → Xả thải khác ngày nhau
+  - Đảm bảo trong tháng có 2 đợt thải cùng ngày
+  - Tổng lượng xả không vượt **10,000 m³/ngày** (đối với vùng không có giấy phép xả thải)
+
+- **Cấp thoát nước ao nuôi**:
+  - Lượng cấp không được vượt **8,640 m³/ngày**
+
+- **Khi sử dụng thuốc điều trị bệnh**:
+  - **KHÔNG ĐƯỢC THAY NƯỚC**
 
 #### FR-OPS-006: Waste Management
 - **Loại & Số lượng**: Chất thải
@@ -926,11 +966,38 @@ Trong đó:
 
 ### 7.2 Công thức Tăng trưởng (Growth Rate)
 
+#### 7.2.1 Đường Chuẩn Tăng Trưởng (Standard Growth Curve)
+
+**Dữ liệu từ thực tế trang trại:**
+
+```
+┌──────────────────┬────────────────────┬──────────────────┐
+│ Thời gian nuôi   │ Tăng trọng/tháng   │ TLBQ cuối tháng  │
+│ (tháng)          │ (g)                │ (g)              │
+├──────────────────┼────────────────────┼──────────────────┤
+│ 1                │ 40                 │ 70               │
+│ 2                │ 80                 │ 150              │
+│ 3                │ 100                │ 250              │
+│ 4                │ 120                │ 380              │
+│ 5                │ 140                │ 520              │
+│ 6                │ 150                │ 670              │
+│ 7                │ 180                │ 850              │
+│ 8                │ 150                │ 1000             │
+└──────────────────┴────────────────────┴──────────────────┘
+```
+
+**Lưu ý**:
+- Đường chuẩn này dựa trên dữ liệu thực tế từ trang trại
+- Sử dụng cho mô phỏng và dự báo tăng trưởng
+- Điều chỉnh theo điều kiện môi trường thực tế
+
+#### 7.2.2 Tăng Trưởng Hàng Ngày (Simplified Model)
+
 ```
 TĂNG TRƯỞNG HÀNG NGÀY
 Actual_growth = Base_growth × Hệ_số_điều_chỉnh
 
-Base Growth theo tuổi:
+Base Growth theo tuổi (Mô hình đơn giản hóa):
 ┌────────────────────┬──────────────┬─────────────────────┐
 │ Tuổi (ngày)        │ Tăng/ngày    │ TLBQ cuối giai đoạn │
 ├────────────────────┼──────────────┼─────────────────────┤
@@ -952,13 +1019,46 @@ HỆ SỐ ĐIỀU CHỈNH:
 
 ### 7.3 Công thức Tỷ lệ chết (Mortality Rate)
 
+#### 7.3.1 Quy Tắc Cá Chết Theo Thực Tế Trang Trại
+
+**Tỷ lệ hao hụt chuẩn theo giai đoạn:**
+
+```
+┌───────────────────────────────────────┬──────────────┬────────────────────────┐
+│ Giai đoạn                             │ Tỷ lệ (%)    │ Ghi chú                │
+├───────────────────────────────────────┼──────────────┼────────────────────────┤
+│ Ngày 1-7 (Tổng hao hụt)              │ < 0.5%       │ Giai đoạn nhạy cảm     │
+│ Ngày 8-14 (Hao hụt/ngày)             │ < 0.4%/ngày  │ Giai đoạn thích nghi   │
+│ Cỡ cá tới 40g (Hao hụt/ngày)         │ < 0.3%/ngày  │ Giai đoạn phát triển   │
+│ Cỡ cá 40-80g (Hao hụt/ngày)          │ < 0.1%/ngày  │ Tăng trưởng ổn định    │
+│ Cỡ cá 80-100g (Hao hụt/ngày)         │ < 0.03%/ngày │ Giai đoạn ổn định      │
+│ Cỡ cá > 100g (Hao hụt/ngày)          │ < 0.02%/ngày │ Giai đoạn trưởng thành │
+└───────────────────────────────────────┴──────────────┴────────────────────────┘
+
+TỶ LỆ VÔ HÌNH:
+- Công thức: ((Số con thả - (Số con thu hoạch + Số con chết)) / Số con thả) × 100
+- Tiêu chuẩn: ≤ 10%
+```
+
+**Xử lý cá bệnh:**
+- Khi cá chết vượt tỷ lệ quy định → Cá bệnh
+- Đặc biệt quan trọng cho cá < 100g
+- **Trước khi dùng thuốc trị bệnh**:
+  - Cho cá chết vượt quy định: 2 ngày
+  - Sau ngày cuối cùng dùng thuốc: 3-5 ngày
+- **Trước khi dùng thuốc trị ký sinh trùng**:
+  - Cho cá chết vượt quy định: 1 ngày
+  - Sau ngày cuối cùng dùng thuốc: 1-2 ngày
+
+#### 7.3.2 Công Thức Tính Toán (Simplified Model)
+
 ```
 TỶ LỆ CÁ CHẾT
 Base_rate = GetBaseRate(Age)
 Adjusted_rate = Base_rate × Hệ_số_bệnh × Hệ_số_stress
 Cá_chết = Random(Adjusted_rate × 0.8, Adjusted_rate × 1.2) × Số_cá
 
-Base Rate theo tuổi:
+Base Rate theo tuổi (Mô hình đơn giản):
 ┌────────────────────┬──────────────┐
 │ Tuổi (ngày)        │ Tỷ lệ (%)    │
 ├────────────────────┼──────────────┤
@@ -974,7 +1074,48 @@ HỆ SỐ BỆNH:
 - Thiếu oxy (DO<2): × 5-10
 ```
 
+**Lưu ý**:
+- Sử dụng quy tắc theo thực tế (7.3.1) cho production
+- Sử dụng mô hình đơn giản (7.3.2) cho training/simulation
+
 ### 7.4 Công thức Thức ăn (Feed Allocation)
+
+#### 7.4.1 Quy Tắc Thức Ăn Theo Thực Tế Trang Trại
+
+**Khẩu phần thức ăn theo kích cỡ cá:**
+
+```
+┌────────────┬─────────────────┬──────────────────┬──────────────────────────────────────┐
+│ Kích cỡ cá │ Kích cỡ TA (max)│ Khẩu phần        │ Công thức                            │
+├────────────┼─────────────────┼──────────────────┼──────────────────────────────────────┤
+│ 15-80g     │ 2-3 mm          │ Tối đa 4% BW     │ (4 × TLBQ × Số cá) / 100            │
+│ 80-200g    │ 3-4 mm          │ Tối đa 3% BW     │ (3 × TLBQ × Số cá) / 100            │
+│ 200-1000g  │ 4-6 mm          │ Tối đa 2% BW     │ (2 × TLBQ × Số cá) / 100            │
+└────────────┴─────────────────┴──────────────────┴──────────────────────────────────────┘
+
+BW = Body Weight (Trọng lượng thân)
+```
+
+**Quy định đóng gói & phân phối:**
+- **Bao chuẩn**: 40kg/bao (từ 2mm-26 đạm đến 6mm-22 đạm)
+- **Lượng cho ăn**: Phải chẵn 1 bao (làm tròn theo bao)
+- **Nhiều lô cùng ngày**: Tách ra 2 dòng cho mã số lô, HSD và lượng
+- **Thay thế kích cỡ**: Khi hết kích cỡ đang dùng, có thể dùng kích cỡ tiếp theo còn trong kho
+
+**Ràng buộc quan trọng:**
+
+1. **Khi sử dụng thuốc điều trị bệnh**:
+   - Giảm thức ăn 50% so với ngày trước đó
+   - Sau khi hết bệnh: Tăng dần trở lại
+
+2. **Sau khi thu tỉa**:
+   - Giảm lượng thức ăn tương đương với lượng cá còn lại trong ao
+
+3. **Tăng/giảm thức ăn**:
+   - Không được chênh lệch quá ±50% so với ngày hôm trước
+   - Đảm bảo tính ổn định trong quá trình nuôi
+
+#### 7.4.2 Công Thức Tính Toán (Simplified Model)
 
 ```
 LƯỢNG THỨC ĂN (kg/ngày)
@@ -982,7 +1123,7 @@ Base_%BW = GetBaseFeeding(TLBQ, Age)
 Adjusted_%BW = Base_%BW × Hệ_số_điều_chỉnh
 Thức_ăn = (Sinh_khối × Adjusted_%BW) / 100
 
-Base %BW theo kích cỡ:
+Base %BW theo kích cỡ (Mô hình đơn giản):
 ┌────────────┬──────────────┬──────────────┐
 │ Kích cỡ    │ Tuổi         │ %BW/ngày     │
 ├────────────┼──────────────┼──────────────┤
@@ -1000,6 +1141,10 @@ Base %BW theo kích cỡ:
 - Ràng buộc: ±50% so với ngày trước
 ```
 
+**Lưu ý**:
+- Sử dụng quy tắc theo thực tế (7.4.1) cho production
+- Sử dụng mô hình đơn giản (7.4.2) cho training/simulation
+
 ### 7.5 Công thức FCR (Feed Conversion Ratio)
 
 ```
@@ -1014,6 +1159,54 @@ TIÊU CHUẨN:
 ```
 
 ### 7.6 Công thức Chất lượng nước
+
+#### 7.6.1 Quy Tắc Môi Trường Ao Nuôi Theo Thực Tế
+
+**A. DO (Dissolved Oxygen) - mg/L**
+
+Tần suất đo: 2 lần/ngày (sáng & chiều)
+Yêu cầu: Buổi sáng thấp hơn buổi chiều, chênh lệch: min=0.2, max=1.0, bước nhảy=0.1
+
+```
+┌──────────────────────┬────────────────┬────────────────┬────────────────┬──────────────────┐
+│ Giai đoạn nuôi       │ Tuần 1         │ Tuần 2 - Tháng 1│ 2 Tháng tiếp   │ Các tháng còn lại│
+├──────────────────────┼────────────────┼────────────────┼────────────────┼──────────────────┤
+│ DO Sáng (mg/L)       │ 3.5 - 3.9      │ 3.0 - 3.5      │ 2.9 - 3.2      │ 2.6 - 2.9        │
+│ DO Chiều (mg/L)      │ 3.9 - 4.5      │ 3.5 - 3.9      │ 3.2 - 3.5      │ 2.8 - 3.4        │
+└──────────────────────┴────────────────┴────────────────┴────────────────┴──────────────────┘
+```
+
+**B. Nhiệt độ (Temperature) - °C**
+
+Tần suất đo: 2 lần/ngày (sáng & chiều)
+Yêu cầu: Buổi sáng thấp hơn buổi chiều, chênh lệch: min=0.5, max=2.0, bước nhảy=0.1
+
+**Lưu ý**: Tháng đề cập là tháng của năm (theo mùa), không phải tháng nuôi
+
+```
+┌──────────────────────┬────────────────┬────────────────┬────────────────┐
+│ Thời gian trong năm  │ Tháng 2-5      │ Tháng 6-10     │ Tháng 11-1     │
+├──────────────────────┼────────────────┼────────────────┼────────────────┤
+│ Nhiệt độ Sáng (°C)   │ 28 đến <30     │ 27 đến <30     │ 26 đến <29     │
+│ Nhiệt độ Chiều (°C)  │ 29 đến <32     │ 29 đến <31     │ 28 đến <30     │
+└──────────────────────┴────────────────┴────────────────┴────────────────┘
+```
+
+**C. pH**
+
+Tần suất đo: 2 lần/ngày (sáng & chiều)
+Yêu cầu: Buổi sáng thấp hơn buổi chiều, chênh lệch không quá 0.5, bước nhảy=0.1
+
+```
+┌──────────────────────┬────────────────────────────────────────────┐
+│ Tất cả giai đoạn     │ pH: 7.0 - 8.0                             │
+└──────────────────────┴────────────────────────────────────────────┘
+```
+
+**D. Cảnh báo mật độ nuôi**
+- Mật độ nuôi: Cảnh báo khi đạt **37 kg/m²**
+
+#### 7.6.2 Công Thức Tính Toán (Simplified Model)
 
 ```
 DO (Dissolved Oxygen) - mg/L
@@ -1034,6 +1227,10 @@ TIÊU CHUẨN AN TOÀN:
 - H2S: < 0.05 mg/L
 - NH3: < 0.2 mg/L
 ```
+
+**Lưu ý**:
+- Sử dụng quy tắc theo thực tế (7.6.1) cho production
+- Sử dụng mô hình đơn giản (7.6.2) cho training/simulation
 
 ### 7.7 Thuật toán FEFO (First-Expired, First-Out)
 
@@ -2439,7 +2636,80 @@ Form **FSIS Reports** được sử dụng để xem và xuất báo cáo tuân 
 | Batch Code | Mã lô | Mã theo dõi lô sản xuất |
 | HSD | Hạn sử dụng | Expiry Date |
 
-### 18.2 Data Validation Rules
+### 18.2 Danh Mục Hóa Chất (Chemical Catalog)
+
+**Danh sách hóa chất sử dụng tại trang trại:**
+
+| STT | Tên Hóa Chất | Lượng Sử Dụng | Công Dụng | Nhà Sản Xuất | Quy Cách |
+|-----|-------------|---------------|-----------|--------------|----------|
+| 1 | VITALUCAN - B12 NEW | 3kg/1 tấn TA | Bổ sung dinh dưỡng | Công ty Cổ Phần UV | 1 kg/gói |
+| 2 | VIMELEC CONCENTRATED | 1kg/1 tấn TA | Bổ sung dinh dưỡng | Công ty TNHH MTV Thuốc thú y & Chế phẩm sinh học Vemedim | 1 kg/gói |
+| 3 | VITAMIN C ANTISTRESS | 1kg/500kg TA | Bổ sung dinh dưỡng | Công ty TNHH MTV Thuốc thú y & Chế phẩm sinh học Vemedim | 1 kg/gói |
+| 4 | UV - FeB12 max | 1 lít/500kg TA | Bổ sung dinh dưỡng | Công ty Cổ Phần UV | 1 lít/chai |
+| 5 | UV-ZYMLUS MAX | 1 lít/700kg TA | Bổ sung dinh dưỡng | Công ty Cổ Phần UV | 1 lít/chai |
+| 6 | PZOZYME | 1kg/500kg TA | Bổ sung dinh dưỡng | Công ty Cổ Phần UV | 1 kg/gói |
+| 7 | HEPAMIN super | 1 lít/300kg TA | Bổ sung dinh dưỡng | Công ty Cổ Phần UV | 1 lít/chai |
+| 8 | BIO IMMUNE-100 | 1 lít/1 tấn TA | Bổ sung dinh dưỡng | CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KHANG ANH | 1 lít/chai |
+| 9 | PHYLUS | 2kg/1 tấn TA | Bổ sung dinh dưỡng | Công ty TNHH MTV Thuốc thú y & Chế phẩm sinh học Vemedim | 1 kg/gói |
+| 10 | UV-BIOMAX | 1kg/500kg TA | Bổ sung dinh dưỡng | Công ty Cổ Phần UV | 1 kg/gói |
+| 11 | VITALEC FISH + | 1kg/1 tấn TA | Bổ sung dinh dưỡng | Provimi | 1 kg/gói |
+
+**Lưu ý**:
+- TA = Thức ăn
+- Danh mục này có thể được bổ sung thêm tùy theo nhu cầu của từng vùng nuôi
+- Hóa chất dạng lỏng: Cảnh báo khi tổng lượng trong kho vượt 90% sức chứa
+- Cần theo dõi HSD và MSL (Mã số lô) cho từng lô nhập kho
+
+### 18.3 Yêu Cầu Thao Tác & Nghiệp Vụ
+
+**Các yêu cầu chức năng bổ sung từ thực tế:**
+
+1. **Nhật ký nuôi**:
+   - Cho phép nhập liệu: Thời gian thu hoạch, Sản lượng thu hoạch, TLBQ thu hoạch và thu tỉa, FCR
+   - Cảnh báo khi mật độ nuôi đạt 37kg/m²
+   - Có trường nhập tên người phụ trách ao và cho phép thay đổi khi luân chuyển nhân sự
+   - Báo cáo tốc độ tăng trưởng, mật độ của tất cả các ao khi chọn 1 ngày bất kỳ
+
+2. **Sổ giao nhận chất thải (P305-F37)**:
+   - Tổng hợp số lượng cá chết kg/ngày (trừ lượng cá chết vượt ngưỡng)
+   - Tổng hợp lượng thức ăn theo đơn vị tính (bao/túi) để tính bao bì rỗng (40kg/bao, 600kg/túi)
+
+3. **Phiếu sức khỏe cá nuôi (P303-F07)**:
+   - Tổng hợp thông tin ngày cân mẫu: Ngày, ao, số con cá chết, TLBQ, loại + lượng hóa chất
+
+4. **Phiếu chỉ định sản phẩm (P303-F06)**:
+   - Tổng hợp thông tin ngày sử dụng hóa chất (trừ thuốc trị bệnh và ký sinh)
+   - Thông tin: Ngày, Ao, tên sản phẩm, đơn vị tính, lượng, lý do sử dụng
+
+5. **Sổ kho thức ăn (P301-F07)**:
+   - Tổng hợp lượng thức ăn theo kho tương ứng
+   - Phân biệt theo kích cỡ từng loại
+   - Nhập tay: Ngày nhập, lượng, MSL, quy cách
+   - HSD tính từ MSL: Ký tự 2-4 từ bên phải (ngày Julian) + 89 ngày
+   - Cảnh báo: Ngày nhập trước ngày sản xuất hoặc hết HSD
+
+6. **Sổ kho hóa chất (P303-F04)**:
+   - Tổng hợp lượng hóa chất theo loại
+   - Nhập tay: Ngày nhập, lượng, MSL, HSD
+   - Lấy thông tin nhà sản xuất và quy cách từ danh mục
+   - Cảnh báo hết HSD
+   - Cảnh báo hóa chất lỏng khi tổng kho vượt 90% sức chứa
+
+7. **Biên bản giao nhận thức ăn (P301-F06)**:
+   - Tổng hợp từ P301-F07: Ngày, loại, lượng, quy cách, MSL, kho
+   - Cho chọn: Ghe vận chuyển, người vận chuyển
+   - Cho nhập: Tên người nhận
+   - Cố định: 48h trước tại "Huyện Cao Lãnh - Đồng Tháp"
+
+8. **Biên bản giao nhận hóa chất (P303-F03)**:
+   - Tổng hợp từ P303-F04: Ngày, tên hàng, lượng, quy cách, MSL/HSD, nhà sản xuất
+   - Cho nhập: Tên người nhận
+   - Cố định: Người giao "Lê Thị Hồng Ngọc", 48h trước tại "Thành phố Cao Lãnh - Đồng Tháp"
+
+9. **Cấp thoát nước**:
+   - Cho phép chọn nhịp trao đổi nước của vùng khi bắt đầu chạy phần mềm
+
+### 18.4 Data Validation Rules
 
 **BUSINESS RULES**:
 - Pond không thể có 2 cycles active cùng lúc
@@ -2536,15 +2806,16 @@ Form **FSIS Reports** được sử dụng để xem và xuất báo cáo tuân 
 
 | Property | Value |
 |----------|-------|
-| **Document ID** | SRS-AQUASIM-4.0-FINAL |
-| **Version** | 4.0 Final Consolidated |
-| **Status** | APPROVED |
+| **Document ID** | SRS-AQUASIM-4.1-ENHANCED |
+| **Version** | 4.1 Enhanced with Operational Data |
+| **Status** | UPDATED |
 | **Date** | 14/11/2025 |
-| **Total Pages** | ~80 pages |
-| **Word Count** | ~30,000 words |
+| **Total Pages** | ~85 pages |
+| **Word Count** | ~32,000 words |
 | **Author** | Technical Team |
 | **Reviewer** | Project Manager |
 | **Approver** | Client Representative |
+| **Data Source** | QLCLN_all_sheets.json (Farm operational data) |
 
 ---
 
@@ -2556,7 +2827,8 @@ Form **FSIS Reports** được sử dụng để xem và xuất báo cáo tuân 
 | v2.0 | 25/10/2025 | Added technical architecture |
 | v3.0 | 04/11/2025 | Added security, audit, testing sections |
 | v4.0 | 06/11/2025 | Consolidated: Removed duplicates, unified structure |
-| **v4.0 FINAL** | **14/11/2025** | **Final consolidation - Complete standalone document** |
+| v4.0 FINAL | 14/11/2025 | Final consolidation - Complete standalone document |
+| **v4.1** | **14/11/2025** | **Integrated detailed operational data from QLCLN_all_sheets.json:**<br>- Updated growth curve with actual farm data (Section 7.2)<br>- Enhanced mortality rules with real thresholds (Section 7.3)<br>- Added detailed feed allocation rules (Section 7.4)<br>- Integrated environment monitoring rules (Section 7.6)<br>- Expanded water exchange procedures (Section 4.5)<br>- Added chemical catalog (Appendix 18.2)<br>- Added operational requirements (Appendix 18.3) |
 
 ---
 
